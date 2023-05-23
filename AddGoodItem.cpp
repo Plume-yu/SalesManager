@@ -30,12 +30,12 @@ AddGoodItem::AddGoodItem(QWidget *parent, QString action, int gid) :
     // 根据不同操作执行不同逻辑
     this->userAction = action;
     if (action == "add") {
-        setWindowTitle("新建商品");
-        ui->actionLabel->setText("新建商品:");
+        setWindowTitle("新建档案");
+        ui->actionLabel->setText("新建档案:");
     }
     else if (action == "modify") {
-        setWindowTitle("修改商品信息");
-        ui->actionLabel->setText("修改商品信息:");
+        setWindowTitle("修改档案信息");
+        ui->actionLabel->setText("修改档案信息:");
 
         fetchGoodInfo(gid);
     }
@@ -64,7 +64,7 @@ AddGoodItem::~AddGoodItem()
 /* 获取已存在的商品信息并填入 LineEdit 中 */
 void AddGoodItem::fetchGoodInfo(int gid)
 {
-    // 获取商品信息
+    // 获取档案信息
     QSqlQuery query;
     query.prepare("SELECT gno, cid, title, subtitle, sku, inventory, "
                   "restock_value, selling_value, length, width, height, weight, color "
@@ -74,7 +74,7 @@ void AddGoodItem::fetchGoodInfo(int gid)
     query.exec();
 
     if (!query.next()) {
-        createMessageBox("未找到 ID 为" + QString::number(gid) + "的商品！");
+        createMessageBox("未找到 ID 为" + QString::number(gid) + "的档案！");
         return;
     }
 
@@ -96,7 +96,7 @@ void AddGoodItem::fetchGoodInfo(int gid)
     getImages(gid);
 }
 
-/* 获取商品图片 */
+/* 获取档案图片 */
 void AddGoodItem::getImages(int gid)
 {
     // 清空映射信息
@@ -105,7 +105,7 @@ void AddGoodItem::getImages(int gid)
 
     model->clear();
 
-    // 获取商品图片
+    // 获取档案图片
     QSqlQuery query;
     query.prepare("SELECT pid, pictures "
                   "FROM pictures "
