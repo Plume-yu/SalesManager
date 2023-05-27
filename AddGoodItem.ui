@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>新建/修改商品信息</string>
+   <string>新建/修改版图信息</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background:white;</string>
@@ -58,7 +58,7 @@ QPushButton:hover{
      </font>
     </property>
     <property name="text">
-     <string>新建商品</string>
+     <string>新建版图</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -77,7 +77,7 @@ QPushButton:hover{
      </font>
     </property>
     <property name="text">
-     <string>商品 ID</string>
+     <string>版图 ID</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="gidEdit">
@@ -109,7 +109,7 @@ QPushButton:hover{
      </font>
     </property>
     <property name="text">
-     <string>商品编号</string>
+     <string>版图编号</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="gnoEdit">
@@ -173,7 +173,7 @@ QPushButton:hover{
      </font>
     </property>
     <property name="text">
-     <string>商品名称</string>
+     <string>版图名称</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="titleEdit">
