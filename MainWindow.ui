@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>商品销售管理系统</string>
+   <string>润航包装管理系统</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
@@ -134,7 +134,7 @@ QTabBar::tab:selected {
 }</string>
       </property>
       <property name="text">
-       <string>新增商品</string>
+       <string>新版入库</string>
       </property>
      </widget>
      <widget class="QPushButton" name="deleteButton">
@@ -160,7 +160,7 @@ QTabBar::tab:selected {
 }</string>
       </property>
       <property name="text">
-       <string>删除商品</string>
+       <string>删除版图</string>
       </property>
      </widget>
      <widget class="QTableView" name="resultTable">
@@ -221,7 +221,7 @@ selection-background-color: darkgray;
    </string>
       </property>
       <property name="placeholderText">
-       <string>搜索商品 (名称 / 编号 ...)</string>
+       <string>搜索版图 (名称 / 编号 ...)</string>
       </property>
      </widget>
      <widget class="QPushButton" name="editButton">
@@ -378,7 +378,7 @@ selection-background-color: darkgray;
 </string>
       </property>
       <property name="text">
-       <string>新建折扣</string>
+       <string>出货记录</string>
       </property>
      </widget>
     </widget>
@@ -608,7 +608,7 @@ selection-background-color: darkgray;
     </widget>
     <widget class="QWidget" name="sellouts">
      <attribute name="title">
-      <string notr="true">售卖信息</string>
+      <string notr="true">下单信息</string>
      </attribute>
      <widget class="QTableView" name="saleTable">
       <property name="geometry">
@@ -649,7 +649,7 @@ selection-background-color: darkgray;
     </widget>
     <widget class="QWidget" name="inventories">
      <attribute name="title">
-      <string notr="true">库存信息</string>
+      <string notr="true">订单信息</string>
      </attribute>
      <widget class="QTableView" name="stockTable">
       <property name="geometry">
@@ -690,7 +690,7 @@ selection-background-color: darkgray;
     </widget>
     <widget class="QWidget" name="discount">
      <attribute name="title">
-      <string notr="true">折扣管理</string>
+      <string notr="true">出货管理</string>
      </attribute>
      <widget class="QTableView" name="discountTable">
       <property name="geometry">
@@ -725,7 +725,7 @@ selection-background-color: darkgray;
 }</string>
       </property>
       <property name="text">
-       <string>编辑折扣</string>
+       <string>编辑出货</string>
       </property>
      </widget>
      <widget class="QPushButton" name="deleteDiscountButton">
@@ -751,7 +751,7 @@ selection-background-color: darkgray;
 }</string>
       </property>
       <property name="text">
-       <string>删除折扣</string>
+       <string>删除出货</string>
       </property>
      </widget>
     </widget>
